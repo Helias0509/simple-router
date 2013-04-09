@@ -1,7 +1,3 @@
-This document describes the environment for the Mininet sr assignment.  You will
-login to a virtual topology like this one (the IP addresses will be different,
-but the nodes will be arranged identically):
-
 
                                          Application Server 1
                                         +====================+
@@ -66,29 +62,3 @@ eth2    HWaddr4a:56:b8:89:4c:b6
         inet addr 107.21.14.129
 eth1    HWaddr5e:c3:6a:dd:e5:c8
         inet addr 107.23.34.64
- <-- Ready to process packets -->
-
-
-IMPORTANT: The system has more users than IP addresses, so you are not assigned
-a particular set of static IP addresses.  This means each time you connect you
-MAY receive a different set of IP addresses.  However, the system remembers the
-last IP block assigned to you and will always re-assign it to you unless someone
-else is currently using it (in which case you will get a new set of IP
-addresses).  Your routing table (stored in rtable.vrhost) will be automatically
-updated by the stub code.
-
-Please verify that you can see packets arriving to your topology when you try
-and ping one of your router interfaces.  To do this, connect to your topology as
-described above and try and ping eth0 (e.g., 171.67.238.32 in this example).
-
- $ ping 171.67.238.32
-
- You should see output from sr that looks like:
-
- *** -> Received packet of length 42
- *** -> Received packet of length 42
- *** -> Received packet of length 42
-
-If so, everything is working!  If not, please post your question on piazza.
-
-Good Luck!

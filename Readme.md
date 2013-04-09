@@ -44,7 +44,7 @@ Run POX Controller
     
 Run the router
 
-    $ ./sr_router
+    $ ./sr
     
 Test the router using the Mininet
     
